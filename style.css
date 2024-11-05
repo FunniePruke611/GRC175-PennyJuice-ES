@@ -1,0 +1,487 @@
+@charset "utf-8";
+
+/* CSS Document for index */
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: rgb(242, 242, 242);
+    background-size: cover;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1 {
+    font-family: "Twinkle Star", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8vw;
+}
+
+h2 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* div id needs to be mentioned with # hashtag container */
+#container{
+    width: 100%;
+    height: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* any div class needs to be mentioned with a . dot and the class*/
+.header{
+    display: block;
+    width: 100%;
+}
+
+.logo {
+    max-width: 100%;
+    background-color: white;
+    box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 0.25)
+}
+
+.logo > img {
+    display: block;
+    min-width: 20%;
+    max-width: 500px;
+}
+
+.header > div > img {
+    width: 50%;
+    display: block;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.content{
+    /* padding is spacing on inside, margins on the outside */
+    padding: 0;
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    min-width: 400px;
+    max-width: 50%;
+    background-color: white;
+    line-height: 0px; /* aka leading */
+    border-radius: 20px;
+    margin: 10px auto 10px auto;
+    box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 0.25);
+    overflow: hidden;
+}
+
+.nav > * {
+    align-items: stretch;
+    flex: 0 0 100%;
+    white-space: nowrap;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    /* relative changes position depending on screen/device */
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+/* when addressing, you need to address the hierarchy, similar to folders in finder */
+.nav ul li {
+    width: 25%/*24.2597646713256818%*/;
+    line-height: 1.5;
+    display: inline-block;
+    list-style: none;
+    position: relative;
+     /* 1 value takes it as all sides, 2 values as top bottom, 4 values as top bottom left and right */
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.selected {
+    background-color: #e2e2e2;
+}
+
+.nav ul li:hover {
+    width: 25%/*24.2597646713256818%*/;
+    background-color: cornflowerblue;
+    line-height: 1.5;
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* with "a" we are addressing every single button <a> link within the nav */
+.nav ul li a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 2 vw;
+    box-sizing: border-box;
+    padding: 5%;
+}
+
+    /* dropdown */
+.nav ul li ul {
+    display: none;
+    position: absolute;
+    padding: 0px;
+    border-radius: 0px 0px 10px 10px; /* top left, top right, bottom left, bottom right */
+}
+
+.nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    background-color: skyblue;
+    padding: 25px 25px;
+}
+
+.nav ul li ul li {
+    padding: 15px 15px;
+}
+
+.nav ul li ul li a {
+    display: block;
+    color: white;
+}
+
+.nav ul li ul li a:hover {
+    display: block;
+    color: chartreuse;
+}
+
+/*———————————————————————————————————————————————————————*/
+
+/*Block 1 image and blurb section*/
+.block1 {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.block1img {
+    width: 85%;
+    flex: 70%;
+    flex-wrap: wrap;
+    display: flex; /* after defining flex details, you display the flex so it would actually show up */
+    margin: auto;
+    position: relative;
+}
+
+.block1text {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.block1text div {
+    font-size: min(1em);
+    
+}
+
+.block1text > a {
+    display: block;
+    background-color: rgb(232 226 121);
+    color: black;
+    border-radius: 6px;
+    margin: auto;
+    padding: 8px 25px;
+    max-width: fit-content;
+    float: left;
+    text-decoration: none;
+}
+
+.block1img > img {
+    width: 100%;
+    display: flex;
+    flex: 70%;
+    flex-wrap: wrap;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 0.25)
+}
+
+
+/*Block 2 product section*/
+.block2 {
+    display: block;
+    width: 100%;
+    background-color: rgb(232 226 121);
+    box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 0.25);
+    margin-bottom: 30px;
+}
+
+.block2img {
+    display: block;
+    max-width: 40%;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    margin: 5% 4% 5% 6%;
+}
+
+.block2img h3 {
+    font-size: 5vw;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.block2img > img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 0.25);
+}
+
+.block2text {
+    float: left;
+    max-width: 40%;
+    max-height: 90%;
+    box-sizing: border-box;
+    margin: 5% 6% 5% 4%;
+}
+
+.block2text > h2 {
+    font-size: 4vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.block2text > div {
+    font-size: 2.4vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.block2text > a {
+    font-size: 2.4vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.block2 .clear {
+    clear: both;
+    display: block;
+}
+
+/*———————————————————————————————————————————————————————*/
+
+/*.flex-container {
+    display: flex;
+    background-color: silver;
+    justify-content: center;
+    clear: both; /* so the content within each div wont flow
+}*/
+
+.footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footerblock1 {
+    box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 0.25);
+    margin-bottom: 30px;
+    background-color: rgb(247 206 196);
+}
+
+.newsletter {
+    float: left;
+    width: 257px;
+    margin: 30px;
+}
+
+.newsletter > * {
+    
+}
+
+#twitter-widget-0 {
+    position: static;
+    float: left;
+    visibility: visible;
+    width: 257px;
+    height: 475px;
+    display: block;
+    flex-grow: 1;
+}
+
+.footerblock1clear {
+    clear: both;
+}
+
+/* ">" selects DIRECT child elements of a specified parent element; e.g. "flex-container > div" selects all divs under the flex-container, but not divs under other elements, even if they collectively fall under the flex-container */
+/*.flex-container > div {
+    background-color: aquamarine;
+    color: fuchsia;
+    width 100%;
+    text-align: center;
+    line-height: 15px;
+    margin: 10px;
+} */
+
+.footerblock2 {
+    max-width: 100%;
+    background-color: rgb(255 136 156);
+    margin: 0;
+    padding: 70px 0;
+}
+
+.footerfooter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ffcol {
+     width: 30%;
+    padding: 0 15px;
+}
+
+.ffcol h4 {
+    font-size 18px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+/*.ffcol h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom -10px;
+    background-color: black;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+} */
+
+.footerfooterfooter {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 1000px;
+}
+
+/*———————————————————————————————————————————————————————*/
+/* About Page */
+
+.aboutblock1 {
+    display: flex;
+    clear: both;
+    width: 100%;
+    flex: 70%;
+    flex-wrap: wrap;
+    display: flex; /* after defining flex details, you display the flex so it would actually show up */
+    margin: 0;
+    padding: 0;
+    position: relative; /*parent needs position relative for text with position absolute to stay within boundaries*/
+}
+
+.aboutblock1 > div {
+    text-align: left;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+.aboutblock1 > div > img {
+    width: 100%;
+    display: flex;
+    flex: 70%;
+    flex-wrap: wrap;
+}
+
+.aboutblock1 > h1 {
+    font-size: 10vw;
+    color: rgb(242, 242, 242);
+    position: absolute;
+    bottom: -5%;
+    left: 5%;
+    padding: 0;
+    margin: 0;
+}
+
+.aboutblock2 {
+    display: flex;
+    justify-content: left;
+    clear: both;
+    width: 100%;
+    background-color: #7297c4;
+    box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 0.25);
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.aboutblock2 > div {
+    width: 50%;
+    text-align: left;
+    line-height: 20px;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.aboutblock2 p {
+    color: rgb(242, 242, 242);
+}
+
+.aboutblock2 img {
+    display: block;
+    max-width: 100%;
+    border-radius: 20px;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    margin: 5% 4% 5% 6%;
+}
+
+.aboutblock3 {
+    display: flex;
+    justify-content: center;
+    clear: both;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.aboutblock3 div {
+    width: 70%;
+    text-align: right;
+    line-height: 20px;
+    margin: 20px;
+}
+
+.aboutblock3 h2 {
+    width: 20%;
+    text-align: left;
+    margin: 20px;
+}
+
+
+
+
