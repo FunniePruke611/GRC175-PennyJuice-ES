@@ -145,7 +145,7 @@ h3 {
     text-align: center;
     text-decoration: none;
     color: black;
-    font-size: 2 vw;
+    font-size: 1rem;
     box-sizing: border-box;
     padding: 5%;
 }
@@ -185,10 +185,11 @@ h3 {
 .block1 {
     display: block;
     margin-bottom: 30px;
+    padding: 0 5%;
 }
 
 .block1img {
-    width: 85%;
+    max-width: 1000px;
     flex: 70%;
     flex-wrap: wrap;
     display: flex; /* after defining flex details, you display the flex so it would actually show up */
@@ -237,20 +238,26 @@ h3 {
 
 /*Block 2 product section*/
 .block2 {
-    display: block;
+    display: flex;
     width: 100%;
     background-color: rgb(232 226 121);
     box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 0.25);
     margin-bottom: 30px;
 }
 
+.block2PLEASECENTER {
+    max-width: 800px;
+    margin: auto;
+}
+
 .block2img {
     display: block;
-    max-width: 40%;
+    min-width: 285px;
+    max-width: 400px;
     position: relative;
     float: left;
     box-sizing: border-box;
-    margin: 5% 4% 5% 6%;
+    margin: 30px;
 }
 
 .block2img h3 {
@@ -275,28 +282,29 @@ h3 {
 }
 
 .block2text {
-    float: left;
-    max-width: 40%;
-    max-height: 90%;
     box-sizing: border-box;
-    margin: 5% 6% 5% 4%;
+    margin: 30px;
     color: #cc3300;
 }
 
+@media (max-width:705px) {
+
+}
+
 .block2text > h2 {
-    font-size: 4vw;
+    font-size: 2rem;
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
 .block2text > div {
-    font-size: 2.4vw;
+    font-size: 1rem;
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
 .block2text > a {
-    font-size: 2.4vw;
+    font-size: 1.1rem;
     margin-top: 5%;
     margin-bottom: 5%;
     color: #cc3300;
@@ -317,35 +325,40 @@ h3 {
 }*/
 
 .footer {
+    width: 100%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .footerblock1 {
+    width: 100%;
     display: flex;
     background-color: rgb(247 206 196);
-    padding: 3.5%
+    padding: 3.5% 0;
+}
+
+.newsletterPLEASECENTER {
+    margin: auto;
+    display: flex;
 }
 
 .newsletter {
-    float: left;
-    width: 50%/*257px*/;
+    display: block;
+    max-width: 500px;
     margin: 30px;
     color: #996666;
 }
 
 .newsletter h2 {
-    font-size: 3vw;
+    font-size: 2rem;
 }
 
 .newslettertext {
-    float: left;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: calc(1rem + 0.5vw);
+    font-size: 1rem;
 }
 
 .newsletter input {
@@ -358,8 +371,28 @@ h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: calc(1rem + 0.5vw);
-    margin-right: 2%;
+    font-size: 1rem;
+    margin-right: 0;
+}
+
+@media (max-width: 1070px) {
+    .newsletterPLEASECENTER {
+    margin: auto;
+    display: block;
+    }
+    
+    .newsletter input {
+        width: calc(100% - 20px);
+    }
+    
+    .newsletter button {
+        margin-top: 5px
+    }
+    
+    .feeds {
+        float: none !important;
+    }
+    
 }
 
 .newsletter button {
@@ -371,10 +404,11 @@ h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: calc(1rem + 0.5vw);
+    font-size: 1rem;
 }
 
 .newsletterinput {
+    width: 100%;
     margin: 2% 0;
 }
 
@@ -382,12 +416,12 @@ h3 {
 
 
 .feeds {
+    float: left;
     display: flex;
-    width: 50%;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 30px 0px;
+    margin: 30;
 }
 
 #twitter-widget-0 {
@@ -395,7 +429,7 @@ h3 {
     height: 475px;
     display: block;
     flex-grow: 0;
-    margin: 0 auto 0 10px;
+    margin: 0;
 }
 
 #facebook-widget-0 {
@@ -404,7 +438,7 @@ h3 {
     display: block;
     flex-grow: 0;
     border-radius: 13px;
-    margin: 0 10px 0 auto;
+    margin-right: 20px;
 }
 
 .footerblock1clear {
@@ -434,6 +468,13 @@ h3 {
     margin-left: 5%;
 }
 
+@media (max-width:965px) {
+    .ffcol {
+        text-align: left !important;
+        width: 80% !important;
+    }
+}
+
 .ffcol {
     width: 30%;
     padding: 0 15px;
@@ -453,6 +494,9 @@ h3 {
     margin: 15px 0;
 }
 
+.ffcol h2 {
+}
+
 #ffcol-align {
     text-align: right;
 }
@@ -469,6 +513,7 @@ h3 {
 } */
 
 .footerfooterfooter {
+    font-size: 1rem;
     display: flex;
     text-align: center;
     justify-content: center;
