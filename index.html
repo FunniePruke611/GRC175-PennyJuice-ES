@@ -11,6 +11,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+    
 </head>
 
 <body>
@@ -46,17 +52,32 @@
         <div class="content">
             <div class="block1">
                 <div class="block1img">
-                    <img src="colorful-fruits-front-girl-pointing-finger-upward_optimized.jpg">
+                    <img src="colorful-fruits-front-girl-pointing-finger-upward-optimized.jpg">
                     <div class="block1text">
                         <h1>It Makes Sense!</h1>
-                        <div>Find out why we're the top leading producer of childcare juice</div>
+                        <div>Find out why we're the top leading producer of <br>childcare juice</div>
                         <a href="about.html">Learn More</a>
                     </div>
                 </div>
             </div>
             <div class="block2">
                 <div class="block2img">
-                    <img src="juicebottle_mockup_kiwilemon_cropped.jpg">
+                    <div class="juicesliderthing">
+                        <!-- Start WOWSlider.com BODY section -->
+                        <div id="wowslider-container1">
+                        <div class="ws_images"><ul>
+                                <li><img src="juicebottle_mockup_kiwilemon_cropped.jpg" alt="juicebottle_mockup_kiwilemon_cropped" title="juicebottle_mockup_kiwilemon_cropped" id="wows1_0"/></li>
+                                <li><a href="http://wowslider.net"><img src="juicebottle_mockup_carrotorange_cropped.jpg" alt="jquery carousel" title="juicebottle_mockup_carrotorange_cropped" id="wows1_1"/></a></li>
+                                <li><img src="juicebottle_mockup_strawberrypassion_cropped.jpg" alt="juicebottle_mockup_strawberrypassion_cropped" title="juicebottle_mockup_strawberrypassion_cropped" id="wows1_2"/></li>
+                            </ul></div>
+                        <div class="ws_script" style="position:absolute;left:-99%"><!--<a href="http://wowslider.net">html slideshow</a> by WOWSlider.com v9.0m --></div>
+                        <div class="ws_shadow"></div>
+                        </div>	
+                        <script type="text/javascript" src="wowslider.js"></script>
+                        <script type="text/javascript" src="script.js"></script>
+                        <!-- End WOWSlider.com BODY section -->
+                    </div>
+                    <!-- <img src="../images/juicebottle_mockup_kiwilemon_cropped.jpg"> -->
                     <h3>Kiwi & Lemon</h3>
                 </div>
                 <div class="block2text">
@@ -81,11 +102,15 @@
             <div class="footerblock1">
                 <div class="newsletter">
                     <h2>Join Our Newsletter!</h2>
-                    <input placeholder="Your E-mail Address">
-                    <button>Subscribe</button>
-                    <div>Stay refreshed and in the loop with Penny Juice! Join our newsletter for exclusive updates, delicious recipes, and fun tips to make the most of your favorite juice concentrates. Plus, be the first to know about new flavors and special promotions. Sign up today!</div>
+                    <div class="newsletterinput">
+                        <input placeholder="Your E-mail Address">
+                        <button>Subscribe</button>
+                    </div>
+                    <div class="newslettertext">Stay refreshed and in the loop with Penny Juice! Join our newsletter for exclusive updates, delicious recipes, and fun tips to make the most of your favorite juice concentrates. Plus, be the first to know about new flavors and special promotions. Sign up today!</div>
                 </div>
                 <div class="feeds">
+                    <iframe id="facebook-widget-0" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.11/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dfa0e6fa47627d2156%26domain%3Dwww.pennyjuice.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.pennyjuice.com%252Ffa7694c0289f2af56%26relation%3Dparent.parent&amp;container_width=219&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FPENNYJUICE%2F&amp;locale=en_GB&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;tabs=timeline&amp;width=300"></iframe>
+
                     <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" title="Twitter Timeline" src="https://syndication.x.com/srv/timeline-profile/screen-name/1PENNYJUICE?frame=false&hideBorder=false&hideFooter=false&hideHeader=false&hideScrollBar=false&origin=YOUR_DOMAIN_HERE&showHeader=true&showReplies=false&transparent=false&theme=light"></iframe>
                 </div>
                 <div class="footerblock1clear"></div>
@@ -101,7 +126,7 @@
                             <li><a href="">Privacy Policy</a></li>
                         </ul>
                     </div>
-                    <div class="ffcol">
+                    <div class="ffcol" id="ffcol-align">
                         <h2>Contact Us</h2>
                         <div>Got questions or feedback? We’d love to hear from you! Reach out to the Penny Juice team for inquiries about our products, suggestions, or anything else on your mind. Your thoughts matter to us, and we’re here to help.</div>
                         <div>(XXX) XXX-XXXX</div>
